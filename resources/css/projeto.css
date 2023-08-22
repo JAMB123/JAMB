@@ -1,0 +1,172 @@
+#meu-botao {
+  background-color: #321EB1;
+
+}
+#meu-botao2 {
+  background-color: #ffff;
+
+}
+
+#containerCadastro {
+
+  background-color: #656AA6;
+  width: auto;
+  height: auto;
+
+}
+
+#botoes {
+  background-color: #454545;
+  align-items: center;
+  height: 60px;
+  width: 250px;
+  border-radius: 20px;
+  margin-left: 20px;
+}
+#img botoes {
+  width: 10px;
+}
+
+#botoes2 {
+  background-color: #321EB1;
+  align-items: center;
+  height: 60px;
+  width: 250px;
+  border-radius: 20px;
+  margin-left: 20px;
+}
+
+#hr {
+  height: 60px;
+  width: 250px;
+}
+
+#linhaca {
+  border-bottom-style: solid;
+  border-width: 10px;
+  border-color: #2B1998;
+}
+
+#bordaform {
+  border-style: solid;
+  border-width: 2px;
+  border-color: #2B1998;
+  display: flex;
+  flex-direction: column;
+}
+
+#bloco1 {
+  flex-direction: column;
+}
+
+#nome {
+  width: 78%;
+}
+
+#sobrenome {
+  width: 78%;
+}
+
+#Telefone {
+  width: 78%;
+}
+
+#bloco2 {
+  flex-direction:column-reverse;
+}
+
+#linhaE {
+  display: flex;
+  margin-right: 10px;
+}
+
+.email{
+  margin-right: 10px;
+}
+
+.input-container {
+  position: relative;
+  display: inline-block;
+}
+
+.input-icon {
+  position: absolute;
+  top: 70%;
+  left: 8px; /* Ajuste conforme necessário */
+  transform: translateY(-50%);
+  width: 20px; /* Ajuste conforme necessário */
+  height: auto;
+}
+
+.input-field {
+  padding-right: 30px; /* Espaço para a largura da imagem */
+  margin-left: 35px;
+}
+
+#Botaocad {
+  background-color: #321EB1;
+  height: 50px;
+  width: 120px;
+  font-size: 20px;
+}
+
+#tabela {
+  width: 375px;
+}
+#sobre {
+  justify-content: center;
+}
+
+#bordaanimal {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+}
+
+#cadastroanimal {
+  margin-right: 40px;
+}
+
+.formdiv{
+  display: flex;
+  justify-content: center;
+}
+
+#bordaanimal {
+  border-style: solid;
+  border-width: 3px;
+  border-color: #2B1998;
+  display: flex;
+}
+
+#botaocad {
+  background-color: #2B1998;
+  font-size: 17px;
+  align-items: center;
+  height: 40px;
+  width: 100px;
+  border-radius: 7px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+
+
+}
+
+#botaocads {
+  background-color: #454545;
+  font-size: 17px;
+  align-items: center;
+  height: 40px;
+  width: 100px;
+  border-radius: 7px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+
+
+}
+
+
+
+
