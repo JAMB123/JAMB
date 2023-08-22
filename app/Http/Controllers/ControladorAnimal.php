@@ -41,7 +41,7 @@ class ControladorAnimal extends Controller
         $data -> sobre = $request -> input ('sobre');
         $data -> arquivo = $path;
         $data -> save();
-        return redirect('/cadastros/lista')->with('success', 'Animal cadastrada com sucesso');
+        return redirect('/cadastros/lista')->with('success', 'Animal cadastrado com sucesso');
     }
 
     /**
