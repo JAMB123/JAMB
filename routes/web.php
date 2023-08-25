@@ -13,9 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('sistema.index');
-});
+Route::get('/', [App\Http\Controllers\homeController::class, 'index'])->name('index');
 
 Route::get('/favoritos', function () {
     return view('sistema.favoritos');
