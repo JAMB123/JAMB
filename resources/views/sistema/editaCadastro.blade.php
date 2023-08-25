@@ -3,16 +3,26 @@
 @section('content')
 
 <div class="card-body container">
-        <h1 class="py-4">Editar Noticia</h1>
-        <form action="/noticias/{{$data->id}}" method="POST" enctype="multipart/form-data">
+        <h1 class="py-4">Editar Cadastro</h1>
+        <form action="/cadastros/{{$data->id}}" method="POST" enctype="multipart/form-data">
             @csrf
             <div class="form-group">
-                <label for="titulo">Titulo da Noticia:</label>
-                <input type="text" class="form-control" name="titulo" id="titulo" value="{{$data->titulo}}">
-                <label for="descricao">Descrição da Noticia:</label>
-                <input type="text" class="form-control" name="descricao" id="descricao" value="{{$data->descricao}}">
-                <label for="imagem">Imagem da Noticia:</label>
-                <input type="file" class="form-control" name="imagem" id="imagem">
+                <label for="nome">Nome do PET:</label>
+                <input type="text" class="form-control" name="nome" id="nome" value="{{$data->nome}}">
+                <label for="idade">Idade do PET:</label>
+                <input type="text" class="form-control" name="idade" id="idade" value="{{$data->idade}}">
+                <label for="especie">Espécie do PET:</label>
+                <input type="text" class="form-control" name="especie" id="especie" value="{{$data->especie}}">
+                <label for="raca">Raça do PET:</label>
+                <input type="text" class="form-control" name="raca" id="raca" value="{{$data->raca}}">
+                <label for="sexo">Sexo do PET:</label>
+                <input type="text" class="form-control" name="sexo" id="sexo" value="{{$data->sexo}}">
+                <label for="porte">Porte do PET:</label>
+                <input type="text" class="form-control" name="porte" id="porte" value="{{$data->porte}}">
+                <label for="sobre">Descrição do PET:</label>
+                <input type="text" class="form-control" name="sobre" id="sobre" value="{{$data->sobre}}">
+                <label for="arquivo">Imagem da PET:</label>
+                <input type="file" class="form-control" name="arquivo" id="arquivo">
             </div>
             <button type="submit" class="btn btn-success btn-sm">Salvar</button>
         </form>

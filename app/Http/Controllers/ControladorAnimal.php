@@ -14,7 +14,7 @@ class ControladorAnimal extends Controller
     public function index()
     {
         $animal = Animal::all();
-        return view ('sistema.novoCadastro', compact('animal'));
+        return view ('sistema.listaCadastro', compact('animal'));
     }
 
     /**
@@ -59,7 +59,7 @@ class ControladorAnimal extends Controller
     {
         $data = Animal::find($id);
         if(isset($data)){
-            return view('site.editaCadastro', compact('data'));
+            return view('sistema.editaCadastro', compact('data'));
         }
         return redirect('/cadastros/lista')->with('danger', 'Erro ao editar o cadastro');
         
@@ -97,7 +97,7 @@ class ControladorAnimal extends Controller
      */
     public function destroy(string $id)
     {
-        $data = Cadastro::find($id);
+        $data = Animal::find($id);
         if(isset($data)){
             $arquivo = $data->arquivo;    
             Storage::disk('public')->delete($arquivo);

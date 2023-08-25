@@ -1,6 +1,7 @@
 @extends('sistema.layout')
 @section('title','PetMatch')
 @section('content')
+
 <!doctype html>
 <html lang ="pt-br">
 <head>
@@ -34,10 +35,9 @@
         footer p { margin-bottom: .25rem; }
     </style>
 </head>
-<body>
 
+<body>
     <main role="main">
-        
         <section class ="jumbotron text-center">
             <div class ="container">
             <h1 class ="jumbotron-heading"> Fale Aqui Sobre o Pet </h1>
@@ -53,19 +53,19 @@
                 </div>
                 <p>
                     <button type ="submit" class =" btn btn-primary my -2 "> Enviar </button>
-                    <button type =" reset " class =" btn btn-secondary my -2"> Cancelar </button >
+                    <button type ="reset " class =" btn btn-secondary my -2"> Cancelar </button >
                 </p>
             </form>
             </div>
         </section>
 
-        <div class=" album py-5 bg-light" >
+        <div class="album py-5 bg-light" >
             <div class="container">
                 <div class="row">
                  @foreach( $posts as $post )
                         <div class="col-md-4">
                             <div class="card mb-4 shadow-sm">
-                            <img class="card-img-top figure-img img-fluid rounded" src="/storage/{{ $post->arquivo}}">
+                            <img class="card-img-top figure-img img-fluid rounded" src="/storage/{{$post->arquivo}}">
                                 <div class="card-body">
                                     <p class="card-text">{{$post->name}} </p>
                                     <p class="card-text" >{{$post->idade}} </p>
@@ -94,7 +94,7 @@
     <footer class =" text-muted ">
         <div class ="container">
             <p class ="float-right ">
-                <a href ="#" >Voltar </a>
+                <a href ="#" >Voltar</a>
             </p>
             <p> ©2023 CEFET - MG Unidade Varginha </p >
             <p> Técnico em Informática </p >
@@ -104,3 +104,22 @@
 </body>
 </html>
 @endsection
+
+<div class="col-sm-4">
+    <div class="col">
+        <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+            <div class="card-body">
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary">Quero adotar!</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary">Favoritar
+                        </button>
+                    </div>
+                    <small class="text-body-secondary">9 mins</small>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
