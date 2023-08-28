@@ -99,7 +99,7 @@
             <tr>
             <td colspan="2">
                 <td><a href="/">
-          <button class="btn btn-primary my-2 my-sm-0"; id= "botaocads" type="submit" style="margin-right: 15px">Cancelar</button>
+          <button onclick="window.location.href='/';" class="btn btn-primary my-2 my-sm-0"; id= "botaocads" type="button" style="margin-right: 15px">Cancelar</button>
         </a>
     </td>
                 </td>

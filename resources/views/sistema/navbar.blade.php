@@ -12,7 +12,7 @@
       </button>
 
       <div class="collapse navbar-collapse" id="menu">
-          <li class="nav-item dropdown" id="drops">
+          <li class="nav-item dropdown" id="drops" >
             <a class="nav-link dropdown-toggle" href="#" id="menusanduiche" data-bs-toggle="dropdown" aria-expanded="false">Menu</a>
             <ul class="dropdown-menu">
               <li><a href="{{route('login')}}">

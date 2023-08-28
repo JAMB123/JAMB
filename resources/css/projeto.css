@@ -221,8 +221,6 @@
 
 .logo-text a{
   font-family: 'Rouge Script';
-  text-decoration: none;
-  color: var(--accent);
 }
 
 .logo-text h2{
@@ -304,7 +302,6 @@
   width: 70%;
   font-size: 15px;
 }
-
 .eventos{
   margin-top: 3%;
   display: flex;
@@ -316,7 +313,6 @@
   display: flex;
   flex-direction: column;
 }
-
 .evento-img{
   width: 100%;
   aspect-ratio: 16/9;
@@ -344,7 +340,6 @@
   line-height: 47px;
   transition: transform 0.2s;
 }
-
 .colaborador-button:hover{
   border: 1px solid var(--accenthover);
   color: var(--accenthover);
@@ -392,6 +387,7 @@ table {
 #menusanduiche {
   font-size: 30px;
   color: #2B1998;
+  list-style: none
 }
 
 #botaomenu {
@@ -411,9 +407,17 @@ table {
 
 }
 
-#drops {
+#lops {
   width: 100px;
+  list-style: none
 }
+#albumcachorro {
+  background-color: #321EB1;
+}
+#botaofav {
+  background-color: #666570;
+}
+
 
 
 
