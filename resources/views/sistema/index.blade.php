@@ -44,10 +44,10 @@
                                 <p class="card-text">{{ $value['sobre'] }}</p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group" id="albumcachorro">
-                                    <button type="button" style="color: #ffffff; font-size: 15px" class="btn btn-sm btn-outline-secondary">Quero Adotar</button>
-                                    <div class="btn-group" id="botaofav">
-                                    <button onclick="window.location.href='/favoritos';"  style="color: #ffffff; font-size: 15px;" type="button" class="btn btn-sm btn-outline-secondary">Favoritar</button>
+                                    <button type="button" style="color: #ffffff; font-size: 21px" class="btn btn-sm btn-outline-secondary">Adotar</button>
                                     </div>
+                                    <div class="btn-group" id="botaofav">
+                                    <button onclick="window.location.href='/favoritos';"  style="color: #ffffff; font-size: 20px;" type="button" class="btn btn-sm btn-outline-secondary">Favoritar</button>
                                     </div>
                                     <small class="text-muted">9 mins</small>
                                 </div>
