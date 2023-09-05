@@ -1,5 +1,5 @@
 @extends('sistema.layout')
-@section('title','PetMatch')
+@section('title','JAMB')
 @section('content')
 <div class="cadastroanimal">
     <div class="col-sm-12" style="background-color: #fffff" style="width: auto; height: 400px">

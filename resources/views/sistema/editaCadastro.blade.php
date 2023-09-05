@@ -1,5 +1,5 @@
 @extends('sistema.layout')
-@section('title','PetMatch')
+@section('title','JAMB')
 @section('content')
 
 <div class="card-body container">

@@ -745,6 +745,9 @@ table {
 }
 #albumcachorro {
   background-color: #321EB1;
+  height: 45px;
+  width: 200px;
+
 }
 #botaofav {
   background-color: #666570;
@@ -1105,13 +1108,13 @@ table {
   border: 1px solid #321EB1;
   margin-left: 10px;
   height: 40px;
-  width: 100px;
+  width: 130px;
 }
 #botaofav {
-  background-color: #666570;
+  background-color: #ad121f;
   margin-right:20px;
   height: 40px;
-  width: 100px;
+  width: 130px;
   border-radius: 10px;
 }
 

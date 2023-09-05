@@ -1,5 +1,5 @@
 @extends('sistema.layout')
-@section('title','PetMatch')
+@section('title','JAMB')
 @section('content')
     <div class="container">
         <p class="h1 text-start" style="color: #321EB1; font-size: 100px"><b>Favoritos</b></p>
