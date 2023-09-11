@@ -107,4 +107,9 @@ class ControladorAnimal extends Controller
         }
         return redirect('/cadastros/lista')->with('success', 'Cadastro deletado com sucesso');
     }
+
+    /*public function favoritar(Request $request)
+    {
+
+    }*/
 }

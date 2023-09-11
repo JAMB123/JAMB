@@ -13,17 +13,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Auth::routes();
+
 Route::get('/', [App\Http\Controllers\homeController::class, 'index'])->name('index');
 
 Route::get('/favoritos', function () {
     return view('sistema.favoritos');
 });
-
-Route::get('/formulário', function () {
-    return view('sistema.formulário');
-});
-
-Auth::routes();
 
 Route::get('/sobre', function () {
     return view('sistema.sobre');
@@ -41,6 +37,8 @@ Route::get('/cadastros/deletar/{id}', [App\Http\Controllers\ControladorAnimal::c
 Route::post('/cadastros/{id}', [App\Http\Controllers\ControladorAnimal::class, 'update'])->name('gravaEditaCadastro');
 Route::get('/cadastros/cadastrar', [App\Http\Controllers\ControladorAnimal::class, 'create'])->name('novoCadastro');
 Route::post('/cadastros', [App\Http\Controllers\ControladorAnimal::class, 'store'])->name('gravaNovoCadastro');
+
+//Route::post('/favoritos', [App\Http\Controllers\ControladorAnimal::class, 'favoritar'])->name('favoritos');
 
 
 
