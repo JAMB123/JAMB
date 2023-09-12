@@ -1,115 +1,67 @@
 @extends('sistema.layout')
-@section('title','JAMB')
+@section('title', 'JAMB')
 @section('content')
 
-<div class="container" style="margin-left: 15%">
-         <div class="col-sm-6">
-            <p class="h1 text-start" style="color: #2B1998; font-size: 100px; margin-left: 90px; margin-top: 40px; font-weight: bolder ">Adoções</p>
-            <p class="h3 text-start" style="color: #656AA6; font-size: 50px;   font-style: Italic; align-Items: center "></p>
-            
-        </div>
-        <p class="h1 text-start" style=" font-size: 20px;">Nesta seção você tem acesso aos animais que ainda estão esperando por um lar!
-                Para cadastrar um animal que também está a procura de um lar ou saber mais sobre como funcionam as adoções escolha uma das opções abaixo:
-                Ao adotar um bichinho, você estará salvando ele das ruas. 
+    <div class="container" style="margin-left: 15%">
+        <div class="col-sm-6">
+            <p class="h1 text-start"
+                style="color: #2B1998; font-size: 100px; margin-left: 90px; margin-top: 40px; font-weight: bolder ">Adoções
             </p>
+            <p class="h3 text-start" style="color: #656AA6; font-size: 50px;   font-style: Italic; align-Items: center "></p>
 
-    <div style="display:flex; flex-direction: row">
-        <a class="navbar-brand" href="/sobre">
-            <div class="col-sm-4" id="botoes" style="display:flex; flex-direction: row">
-                <p class="h4 text-start" style="color: white; margin-left: 40px">Sobre as adoções</p>
-            </div>
-        </a>
-        <a class="navbar-brand" href="/cadastros/cadastrar">
-            <div class="col-sm-4" id="botoes2" style="display:flex; flex-direction: row">
-                <p class="h4 text-start" style="color: white; margin-left: 19px">Cadastrar um animal</p>
-            </div>
-        </a>
-    </div>
+        </div>
+        <p class="h1 text-start" style=" font-size: 20px;">Nesta seção você tem acesso aos animais que ainda estão esperando
+            por um lar!
+            Para cadastrar um animal que também está a procura de um lar ou saber mais sobre como funcionam as adoções
+            escolha uma das opções abaixo:
+            Ao adotar um bichinho, você estará salvando ele das ruas.
+        </p>
 
-    @if (count($cadastro) === 0)
-    @else
-
-    <div class="album py-5 bg-light">
-        <div class="container">
-
-          <div class="row">
-                        @foreach ($cadastro as $item => $value)
-                        <div class="col-md-4">
-                            <div class="card mb-4 box-shadow">
-                                <img class="card-img-top" src="/storage/{{ $value->arquivo }}" alt="Card image cap" >
-                                <div class="card-body">
-                                <h3>{{ $value['nome'] }}</h3>
-                                <p style="font-size:20px"class="card-text">{{ $value['idade'] }}</p>
-                                <p style="font-size:19px"class="card-text">{{ $value['raca'] }}</p>
-                                <p style="font-size:19px"class="card-text">{{ $value['sobre'] }}</p>
-                                <!--
-                             <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal" data-target="#modal" data-titulo="Dados do doador" data-descricao="{{}}">
-                        Detalhes
-                      </button>
-                      <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                          <div class="modal-content">
-                            <div class="modal-header">
-                              <h5 class="modal-title" id="titulo"></h5>
-                              <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
-                                <span aria-hidden="true">&times;</span>
-                              </button>
-                            </div>
-                            <div class="modal-body">
-                              <p id="descricao"></p>
-                            </div>
-                            <div class="modal-footer">
-                              <button type="button" class="btn btn-sm btn-outline-secondary" data-dismiss="modal">Fechar</button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <form method="POST" action="/material/{{$item->id}}">
-                        @csrf
-                        <input type="hidden" name="_method" value="delete">
-                        <button type="submit" class="btn btn-sm btn-outline-danger">Apagar</button>
-                      </form>
-                    </div>
-                  </div>
+        <div style="display:flex; flex-direction: row">
+            <a class="navbar-brand" href="/sobre">
+                <div class="col-sm-4" id="botoes" style="display:flex; flex-direction: row">
+                    <p class="h4 text-start" style="color: white; margin-left: 40px">Sobre as adoções</p>
                 </div>
-              </div>
+            </a>
+            <a class="navbar-brand" href="/cadastros/cadastrar">
+                <div class="col-sm-4" id="botoes2" style="display:flex; flex-direction: row">
+                    <p class="h4 text-start" style="color: white; margin-left: 19px">Cadastrar um animal</p>
+                </div>
+            </a>
+        </div>
+
+        @if (count($cadastro) === 0)
+        @else
+            <div class="album py-5 bg-light">
+                <div class="container">
+                    <div class="row">
+                        @foreach ($cadastro as $item => $value)
+                            <div class="col-md-4">
+                                <div class="card mb-4 box-shadow">
+                                    <img class="card-img-top" src="/storage/{{ $value->arquivo }}" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h3>{{ $value['nome'] }}</h3>
+                                        <p style="font-size:20px"class="card-text">{{ $value['idade'] }}</p>
+                                        <p style="font-size:19px"class="card-text">{{ $value['raca'] }}</p>
+                                        <p style="font-size:19px"class="card-text">{{ $value['sobre'] }}</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                          <div class="btn-group" id="albumcachorro">
+                                          <button type="button" style="color: #ffffff; font-size: 21px" class="btn btn-sm btn-outline-secondary">Adotar</button>
+                                          </div>
+                                          <div class="btn-group" id="botaofav">
+                                          <button onclick="window.location.href='/favoritos';"  style="color: #ffffff; background-color: #ad121f; font-size: 20px;" type="button" class="btn btn-sm btn-outline-secondary">Favoritar</button>
+                                          </div>
+                                                <small class="text-muted">9 mins</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        @endforeach
+                    </div>
+                </div>
             </div>
-        @endforeach
-      </div>
+        @endif
     </div>
   </div>
-@endsection
-@section('javascript')
-<script type="text/javascript">
-  $('#modal').on('show.bs.modal', function (event) {                                                       
-      var button = $(event.relatedTarget) 
-      var recipientTitulo    = button.data('titulo') 
-      var recipientDescricao = button.data('descricao')                                                                
-      var modal = $(this)
-      $("#titulo").html(recipientTitulo)
-      $('#descricao').html(recipientDescricao)
-  })
-</script>
-@endsection
--->
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group" id="albumcachorro">
-                                    <button type="button" style="color: #ffffff; font-size: 21px" class="btn btn-sm btn-outline-secondary">Adoção</button>
-                                    </div>
-                                    <div class="btn-group" id="botaofav">
-                                    <button onclick="window.location.href='/favoritos';"  style="color: #ffffff; background-color: #ad121f; font-size: 20px;" type="button" class="btn btn-sm btn-outline-secondary">Favoritar</button>
-                                    </div>
-                                    <small class="text-muted">Jamb</small>
-                                </div>
-                                </div>
-                                </div>
-                            </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    @endif
-    
 @endsection

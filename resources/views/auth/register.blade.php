@@ -12,62 +12,62 @@
                     <tbody>
                     <tr>
                 <td colspan="2">
-                     <label for="nome">Nome:</label>
+                     <label for="name">Nome:</label>
                 </td>
                 <td colspan="2">
-                    <label for="nome">Sobrenome:</label>
+                    <label for="sobrename">Sobrenome:</label>
                 </td>
             </tr>
             <tr>
                 <td><img src="{{asset('storage/imagens/boneco.svg')}}" /></td>
-                <td><input type="text" class="form-control" name="nome" id="nome" required></td>
+                <td><input type="text" class="form-control" name="name" id="nome" required></td>
                 <td><img src="{{asset('storage/imagens/boneco.svg')}}" /></td>
-                <td><input type="text" class="form-control" name="nome" id="nome" required></td>
+                <td><input type="text" class="form-control" name="sobrename" id="sobrenome" required></td>
 
             </tr>
             <tr>
                 <td colspan="2">
-                     <label for="nome">E-mail:</label>
+                     <label for="email">E-mail:</label>
                 </td>
                 <td colspan="2">
-                    <label for="nome">Telefone/Celular:</label>
+                    <label for="telefone">Telefone/Celular:</label>
                 </td>
             </tr>
             <tr>
                 <td><img src="{{asset('storage/imagens/email.svg')}}" /></td>
-                <td><input type="text" class="form-control" name="nome" id="nome" required></td>
+                <td><input type="text" class="form-control" name="email" id="nome" required></td>
                 <td><img src="{{asset('storage/imagens/telefone.png')}}" /></td>
-                <td><input type="text" class="form-control" name="nome" id="nome" required></td>
+                <td><input type="text" class="form-control" name="telefone" id="nome" required></td>
 
             </tr>
             <tr>
                 <td colspan="2">
-                     <label for="nome">Senha:</label>
+                     <label for="password">Senha:</label>
                 </td>
                 <td colspan="2">
-                    <label for="nome">Confirmar senha:</label>
+                    <label for="confirm-password">Confirmar senha:</label>
                 </td>
             </tr>
             <tr>
                 <td><img src="{{asset('storage/imagens/chaves.png')}}" /></td>
-                <td><input type="text" class="form-control" name="nome" id="nome" required></td>
+                <td><input type="password" class="form-control" name="senha" id="nome" required ></td>
                 <td><img src="{{asset('storage/imagens/chaves.png')}}" /></td>
-                <td><input type="text" class="form-control" name="nome" id="nome" required></td>
+                <td><input type="password" class="form-control" name="confirm-password" id="nome" required></td>
 
             </tr>
             <tr>
                 <td colspan="2">
-                     <label for="nome">CPF:</label>
+                     <label for="CPF">CPF:</label>
                 </td>
                 <td colspan="2">
-                    <label for="nome">Nome de Usuário:</label>
+                    <label for="username">Nome de Usuário:</label>
                 </td>
             </tr>
             <tr>
                 <td><img src="{{asset('storage/imagens/cpf.png')}}" /></td>
-                <td><input type="text" class="form-control"name="nome" id="nome" required></td>
+                <td><input type="text" class="form-control"name="CPF" id="nome" required></td>
                 <td><img src="{{asset('storage/imagens/arroba.png')}}" /></td>
-                <td><input type="text" class="form-control" name="nome" id="nome" required></td>
+                <td><input type="text" class="form-control" name="username" id="nome" required></td>
 
             </tr>
             <tr>
@@ -83,8 +83,15 @@
             </tbody>
         </table>
 </div>
-
-    
-        
-    
 @endsection
+@section('script')
+    <script type="module">
+        $().ready(function() {
+            let numberMask = new Inputmask('+99(99)99999-9999')
+            numberMask.mask('#telefone')
+            let cpfMask = new Inputmask('999.999.999-99')
+            cpfMask.mask('#CPF')
+        });
+    </script>
+@endsection
+
