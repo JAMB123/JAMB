@@ -20,12 +20,12 @@
         <div style="display:flex; flex-direction: row">
             <a class="navbar-brand" href="/sobre">
                 <div class="col-sm-4" id="botoes" style="display:flex; flex-direction: row">
-                    <p class="h4 text-start" style="color: white; margin-left: 40px">Sobre as adoções</p>
+                    <p class="h4 text-start" style="font-size: 26px; color: white; margin-left: 28px">Sobre as adoções</p>
                 </div>
             </a>
             <a class="navbar-brand" href="/cadastros/cadastrar">
                 <div class="col-sm-4" id="botoes2" style="display:flex; flex-direction: row">
-                    <p class="h4 text-start" style="color: white; margin-left: 19px">Cadastrar um animal</p>
+                    <p class="h4 text-start" style="widht: 255px; font-size: 25px; color: white; margin-left: 15px">Cadastrar um animal</p>
                 </div>
             </a>
         </div>
@@ -41,7 +41,7 @@
                                     <img class="card-img-top" src="/storage/{{ $value->arquivo }}" alt="Card image cap">
                                     <div class="card-body">
                                         <h3>{{ $value['nome'] }}</h3>
-                                        <p style="font-size:20px"class="card-text">{{ $value['idade'] }}</p>
+                                        <p style="font-size:20px" class="card-text">{{ $value['idade'] }} ano(s)</p>
                                         <p style="font-size:19px"class="card-text">{{ $value['raca'] }}</p>
                                         <p style="font-size:19px"class="card-text">{{ $value['sobre'] }}</p>
                                         <div class="d-flex justify-content-between align-items-center">
@@ -51,11 +51,12 @@
                                           <div class="btn-group" id="botaofav">
                                           <button onclick="window.location.href='/favoritos';"  style="color: #ffffff; background-color: #ad121f; font-size: 20px;" type="button" class="btn btn-sm btn-outline-secondary">Favoritar</button>
                                           </div>
-                                                <small class="text-muted">9 mins</small>
+                                                <small class="text-muted"></small>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                    
                             </div>
                         @endforeach
                     </div>

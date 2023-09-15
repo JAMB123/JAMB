@@ -15,8 +15,12 @@
           <li class="nav-item dropdown" style="list-style: none" >
             <a class="nav-link dropdown-toggle" href="#" id="menusanduiche" data-bs-toggle="dropdown" aria-expanded="false">Menu</a>
             <ul class="dropdown-menu">
+            <li><a href="{{route('index')}}">
+                <button class="btn btn-primary my-2 my-sm-0"; id = "botaomenu" type="submit" style="margin-right: 15px; margin-left: 15px">Página inicial</button>
+               </a></li>
+               <br>
               <li><a href="{{route('login')}}">
-                <button class="btn btn-primary my-2 my-sm-0"; id = "botaomenu" type="submit" style="margin-right: 15px; margin-left: 15px">Login</button>
+                <button class="btn btn-primary my-2 my-sm-0"; id = "botaomenu" type="submit" style="font-size: 21px; margin-right: 15px; margin-left: 15px">Login</button>
                </a></li>
                <br>
                <li><a href="{{route('register')}}">
@@ -32,11 +36,11 @@
                </a></li>
                <br>
                <li><a href="/sobre">
-                <button class="btn btn-primary my-2 my-sm-0"; id= "botaomenu" type="submit" style="margin-right: 15px; margin-left: 15px">Sobre</button>
+                <button class="btn btn-primary my-2 my-sm-0"; id= "botaomenu" type="submit" style="margin-right: 15px; margin-left: 15px">Sobre nós</button>
                </a></li>
                <br>
                <li><a href="/cadastros/lista">
-                 <button class="btn btn-primary my-2 my-sm-0"; id= "botaomenu" type="submit" style="margin-right: 15px; margin-left: 15px">Adoções</button>
+                 <button class="btn btn-primary my-2 my-sm-0"; id= "botaomenu" type="submit" style="margin-right: 15px; margin-left: 15px">Lista Adoções</button>
                </a></li>
             </ul>
           </li>

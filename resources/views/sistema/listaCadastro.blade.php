@@ -50,6 +50,8 @@
                                 <td>{{$value['arquivo'] }}</td>
                                 <td>
                                     <a href="/cadastros/editar/{{ $value['id'] }}" class="btn btn-primary">Editar</a>
+                                </td>
+                                <td>
                                     <a href="/cadastros/deletar/{{ $value['id'] }}" class="btn btn-danger" onclick="return confirm('Tem certeza que deseja deletar?')">Deletar</a>
                                 </td>
                             </tr>
