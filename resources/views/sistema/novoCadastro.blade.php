@@ -24,10 +24,9 @@
                 <td colspan="2">
                     <label for="idade">Idade:</label>
                 </td>
-            </tr>
             <tr>
                 <td><img src="{{asset('storage/imagens/osso.png')}}" /></td>
-                <td> <input type="number" name="idade" id="idade" required></td>
+                <td> <input type="number" name="idade" id="idade" min="0" required></td>
             </tr>
             <tr>
                 <td colspan="2">
@@ -52,7 +51,6 @@
                 <td> <input type="text" name="raca" id="raca"></td>
             </tr>
             <br>
-            <br>
             <tr>
                 <td colspan="2">
                 <label for="sexo">Sexo:</label>
@@ -64,7 +62,6 @@
                 <option value="Macho">Macho</option>
                 <option value="Fêmea">Fêmea</option>
             </select></td>
-            </tr>
             <tr>
                 <td colspan="2">
                      <label for="porte">Porte:</label>
@@ -77,7 +74,6 @@
                 <option value="Médio">Médio</option>
                 <option value="Grande">Grande</option>
             </select></td>
-            </tr>
             <tr>
                 <td colspan="2">
                     <label for="sobre">Sobre:</label>
@@ -85,7 +81,7 @@
             </tr>
             <tr>
             <td><img src="{{asset('storage/imagens/sobre.png')}}" /></td>
-            <td><textarea name="sobre" id="sobre" rows="5" cols="40"></textarea></td>
+            <td><textarea name="sobre" id="sobre" max="255" rows="5" cols="40"></textarea></td>
             </tr>
             <tr>
                 <td colspan="2">

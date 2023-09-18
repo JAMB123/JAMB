@@ -52,17 +52,16 @@
                                           <button onclick="window.location.href='/favoritos';"  style="color: #ffffff; background-color: #ad121f; font-size: 20px;" type="button" class="btn btn-sm btn-outline-secondary">Favoritar</button>
                                           </div>
                                                 <small class="text-muted"></small>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                    
                             </div>
                         @endforeach
                     </div>
+                        
                 </div>
             </div>
+          
         @endif
     </div>
-  </div>
 @endsection

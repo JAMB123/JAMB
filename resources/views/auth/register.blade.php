@@ -73,12 +73,11 @@
             <tr>
             <td colspan="2">
                 <td><a href="/">
+            <br>
             
             <td><button class="btn btn-primary my-2 my-sm-0"; id="botaocad" type="submit" style="margin-right: 15px">Cadastrar</button></td>
             <!--<td><p style="color: black" id="titulo"><b>Já tem uma conta? <a style="color: black" href="{{ route('login') }}">Faça Login</a></b></p></td>-->       
             </tr>
-                
-     
             </form>
             </tbody>
         </table>
