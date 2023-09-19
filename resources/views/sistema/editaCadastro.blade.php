@@ -20,7 +20,7 @@
             </tr>
             <tr>
                 <td><img src="{{asset('storage/imagens/pata.png')}}" /></td>
-                <td><input type="text" name="nome" id="nome" required></td>
+                <td><input type="text" class="form-control" name="nome" id="nome" value="{{$data->nome}}"></td>
             </tr>
             <tr>
                 <td colspan="2">
@@ -29,7 +29,7 @@
             </tr>
             <tr>
                 <td><img src="{{asset('storage/imagens/osso.png')}}" /></td>
-                <td> <input type="number" name="idade" id="idade" min="0" required></td>
+                <td> <input type="number" class="form-control" name="idade" id="idade" value="{{$data->idade}}"></td>
             </tr>
             <tr>
                 <td colspan="2">
@@ -38,7 +38,7 @@
             </tr>
             <tr>
                 <td><img src="{{asset('storage/imagens/catioro.png')}}" /></td>
-                <td> <select name="especie" id="especie">
+                <td> <select class="form-control" name="especie" id="especie" value="{{$data->especie}}">
                 <option value="Cachorro">Cachorro</option>
                 <option value="Gato">Gato</option>
                 <option value="Pássaro">Pássaro</option>
@@ -51,7 +51,7 @@
             </tr>
             <tr>
                 <td><img src="{{asset('storage/imagens/pata.png')}}" /></td>
-                <td> <input type="text" name="raca" id="raca"></td>
+                <td> <input type="text" class="form-control" name="raca" id="raca" value="{{$data->raca}}"></td>
             </tr>
             <br>
             <br>
@@ -62,7 +62,7 @@
             </tr>
             <tr>
                 <td><img src="{{asset('storage/imagens/sexos .png')}}" /></td>
-                <td> <select name="sexo" id="sexo">
+                <td> <select class="form-control" name="sexo" id="sexo" value="{{$data->sexo}}">
                 <option value="Macho">Macho</option>
                 <option value="Fêmea">Fêmea</option>
             </select></td>
@@ -74,7 +74,7 @@
             </tr>
             <tr>
                 <td><img src="{{asset('storage/imagens/pata.png')}}" /></td>
-                <td><select name="porte" id="porte">
+                <td><select class="form-control" name="porte" id="porte" value="{{$data->porte}}">
                 <option value="Pequeno">Pequeno</option>
                 <option value="Médio">Médio</option>
                 <option value="Grande">Grande</option>
@@ -87,7 +87,7 @@
             </tr>
             <tr>
             <td><img src="{{asset('storage/imagens/sobre.png')}}" /></td>
-            <td><textarea name="sobre" id="sobre" max="255" rows="5" cols="40"></textarea></td>
+            <td><input type="text" class="form-control" name="sobre" id="sobre" max="255" rows="5" cols="40" value="{{$data->sobre}}"></td>
             </tr>
             <tr>
                 <td colspan="2">
